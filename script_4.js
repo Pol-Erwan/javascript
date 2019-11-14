@@ -19,12 +19,25 @@ const entrepreneurs = [
   { first: 'Peter', last: 'Thiel', year: 1967 }
 ];
 
-console.log("**********Parcourons le tableau :");
+console.log("********** Liste ceux qui sont nés dans les années 1970 :");
 for(const item in entrepreneurs) {
 if (entrepreneurs[item].year > 1970 && entrepreneurs[item].year < 1980) {
   console.log(entrepreneurs[item]);
 }
-else {
-  console.log("no");
 }
+
+console.log("********** Liste des noms et prénoms :");
+for(const item in entrepreneurs) {
+  console.log(entrepreneurs[item].first + " " + entrepreneurs[item].last);
 }
+
+console.log("********** Aujourd'hui chaque inventeur aurait :");
+let année = 2019;
+for(const item in entrepreneurs) {
+  let age = année - entrepreneurs[item].year
+  console.log(entrepreneurs[item].first + " " + entrepreneurs[item].last + " " + age + " ans");
+}
+
+
+
+
