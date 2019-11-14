@@ -38,6 +38,17 @@ for(const item in entrepreneurs) {
   console.log(entrepreneurs[item].first + " " + entrepreneurs[item].last + " " + age + " ans");
 }
 
-
-
+function tri(a,b)
+{
+if (a.last < b.last) {
+return -1; // si a<b il sera mis une position en dessous
+}
+else if (a.last == b.last) {
+ return 0; // si a == b il sera laissé à la position
+}
+else {
+ return 1; // si a>b il sera mis 1 position au dessus
+}
+}
+  console.log(entrepreneurs.sort(tri));
 
