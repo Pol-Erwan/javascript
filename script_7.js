@@ -17,7 +17,7 @@ while (true) {
 	          console.log("T'es en PLS ?");
 		  //break;
 		}
-		    if (letter !== word && letter.toUpperCase() !== letter && letter.indexOf("fortnite") < 0 ) {
+		    if (letter !== word && letter.toUpperCase() !== letter && letter.indexOf("fortnite") < 0 &&  letter.indexOf("?") < 0 ) {
 		      console.log("baleck.");
 		    }
 }
